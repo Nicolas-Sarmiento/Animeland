@@ -1,2 +1,0 @@
-# Animeland
-AnimeLand's repository
