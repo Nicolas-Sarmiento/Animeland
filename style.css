@@ -87,40 +87,4 @@ body{
     display: inline-block;
     padding-left: 10px;
 }
-.buy-menu{
-    background-color: #DF9AB1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bar-menu ul, ol{
-    list-style: none;
-}
-.list-menu li a {
-    background-color: #DF9AB1;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-.list-menu li a:hover{
-    background-color: #CBA0D3;
-}
-.list-menu > li {
-    float: left;
-}
-.list-menu li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-.list-menu li:hover > ul{
-    display: block;
-}
-.list-menu li ul li{
-    position: relative;
-}
-.list-menu li ul li ul{
-    right: -140px;
-    top:0;
-}
+
