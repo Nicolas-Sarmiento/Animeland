@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@font-face {
+    font-family: "Anime ace bb";
+    src: url("./fonts/animeace2_reg.ttf");
+}
+body{
+    background-image: url(./images/1147275.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.site-header{
+    background-color: #F6A5C0;
+    position: fixed;
+    width: 100%;
+}
+.slot{
+    background-color: aqua;
+    padding: 5px;
+    text-align: center;
+    min-width: 242px;
+}
+.main-menu{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nav-menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+}
+.logo{
+    width: 239px;
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6A5C0;
+    position: relative;
+    left: 50px;
+}
+.logo button{
+    background-color: #F6A5C0;
+    border: none;
+}
+.logo h1{
+    text-align: center;
+    font-size: 19px;
+    font-family: "Anime ace bb";
+    color: white;
+}
+.search{
+    width: 360px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+    left: 1100px;
+}
+.button-search{
+    background-color: white;
+    background-image: url(./images/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 5PX;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: inline-block;
+}
+.button-search:hover {
+    background-color: #CBA0D3;
+}
+.search-textfile{
+    height: 40px;
+    width: 320px;
+    border: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+.buy-menu{
+    background-color: #DF9AB1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar-menu ul, ol{
+    list-style: none;
+}
+.list-menu li a {
+    background-color: #DF9AB1;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.list-menu li a:hover{
+    background-color: #CBA0D3;
+}
+.list-menu > li {
+    float: left;
+}
+.list-menu li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.list-menu li:hover > ul{
+    display: block;
+}
+.list-menu li ul li{
+    position: relative;
+}
+.list-menu li ul li ul{
+    right: -140px;
+    top:0;
+}
