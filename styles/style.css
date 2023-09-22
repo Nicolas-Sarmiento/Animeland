@@ -5,70 +5,108 @@
 }
 @font-face {
     font-family: "Anime ace bb";
-    src: url("./fonts/animeace2_reg.ttf");
+    src: url("../fonts/animeace2_reg.ttf");
 }
 body{
-    background-image: url(./images/1147275.jpg);
+    background-image: url(../images/1147275.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-.site-header{
-    background-color: #F6A5C0;
-    position: fixed;
-    width: 100%;
 }
 .slot{
     background-color: aqua;
     padding: 5px;
     text-align: center;
     min-width: 242px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.site-header{
+    background-color: #F6A5C0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 .main-menu{
     height: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .element:not(:nth-child(3)) {
+      display: none;
+    }
+  }
+
+.element:nth-child(2) {
+    margin-right: 90px;
+  }
+  
+  .element:nth-child(3) {
+    margin-left: 90px;
+    position: relative;
+    right: 40px;
+  }
+.contact{
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+.contact-button{
+    background-color: transparent;
+    border: none;
     display: flex;
     align-items: center;
     color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.contact p{
+    margin-left: 10px;
+}
+.carrito{
+    display: flex;
+    align-items: center;
+}
+.ventana-carritos{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
 }
 .nav-menu{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 5px;
 }
-.logo{
-    width: 239px;
-    height: 32px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F6A5C0;
-    position: relative;
-    left: 50px;
-}
-.logo button{
-    background-color: #F6A5C0;
-    border: none;
-}
-.logo h1{
-    text-align: center;
-    font-size: 19px;
-    font-family: "Anime ace bb";
-    color: white;
-}
 .search{
     width: 360px;
     display: flex;
     align-items: center;
-    margin: 5px;
-    position: relative;
-    left: 1100px;
+}
+.search-textfile{
+    height: 40px;
+    width: 320px;
+    border: none;
+    display: inline-block;
+    padding-left: 10px;
 }
 .button-search{
     background-color: white;
-    background-image: url(./images/lupa.png);
+    background-image: url(../images/lupa.png);
     background-repeat: no-repeat;
     background-position: 5PX;
     background-size: 30px;
@@ -80,11 +118,85 @@ body{
 .button-search:hover {
     background-color: #CBA0D3;
 }
-.search-textfile{
-    height: 40px;
-    width: 320px;
+.images-container{
+    max-height: 35px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.images-container button{
+    background-color: transparent;
     border: none;
-    display: inline-block;
-    padding-left: 10px;
+    margin: 0px 10px;
+}
+.images-container img{
+    height: 30px;
+}
+.init-bar{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #fc89af;
+}
+.elementInit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+.elementInit button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.logo h1{
+    text-align: center;
+    font-size: 19px;
+    font-family: "Anime ace bb";
+    color: white;
+}
+.store{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: large;
+}
+
+main{
+    position: absolute;
+    top: 153px;
+    height:fit-content;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.special img{
+    min-width: 100%;
+    min-height: 395px;
+    max-height: 395px;
+}
+.contenedor-ofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.ofert{
+    max-width: 475px;
+    max-height: 532px;
+    min-width: 105px;
+    min-height: 189px;
+    background-color: #CBA0D3;
+    text-align: center;
+    margin: 0px 10px;
+}
+.ofert a{
+    text-decoration: none;
+    color: inherit;
+}
+.ofert img{
+    max-width: 475px;
+    max-height: 475px;
+    min-width: 105px;
+    min-height: 105px;
 }
 
