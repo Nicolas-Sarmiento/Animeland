@@ -232,7 +232,6 @@ main{
     grid-template-columns: repeat(5, 1fr);
     grid-auto-flow: column;
     justify-items: center;
-    background-color: #CBA0D3;
     padding: 5px;
     height: 288px;
     overflow: hidden;
