@@ -297,3 +297,7 @@ main{
 .option img{
     height: 120px;
 }
+
+header button{
+    cursor: pointer;
+}
