@@ -1,6 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5px;
 }
 .info{
     max-width: 50%;
@@ -32,4 +38,39 @@ main{
     border: 2px #CBA0D3 solid;
     border-radius: 8px;
     padding: 10px;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    flex-direction: column;
+    width: 50%;
+    min-width: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input{
+    width: 80%;
+    height: 3em;
+    padding: 5px;
+    min-width: 200px;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+#summit{
+    width: 40%;
+    height: 2em;
+    margin: 1em 0;
+    background-color: #F6A5C0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#summit:hover{
+    background-color: #CBA0D3;
 }

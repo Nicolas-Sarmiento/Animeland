@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    column-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+    min-width: 300px;
+    width: 60%;
+    align-items: center;
+    margin: 10px 0;
+    border-radius: 1em;
+    padding: 10px 0;
+}
+main h3{
+    max-width: 300px;
+}
+.profile-icon{
+    width: 100%;
+    display: inherit;
+    justify-content: center;
+    padding: 1em;
+}
+.profile-icon img{
+    width: 100px;
+    border-radius: 50%;
+}
+.container button{
+
+    width: 100px;
+    height: 2em;
+    justify-self: end;
+    font-size: 15px;
+    border: none;
+    background-color: #F6A5C0;
+    border-radius: 1em;
+
+    &:hover{
+        background-color: #CBA0D3;
+    }
+}
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1em;
+    border-bottom: 0.2em solid #F6A5C0;
+}
+
+.bank{
+    flex-wrap: wrap;
+}
+.add-Card{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-Card button{
+    width: 150px;
+}
+.password{
+    padding: 10px;
+}
+.password button{
+    width: 150px;
+
+}
+
+.payment{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.payment div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: ce;
+    padding: 10px;
+}
+.payment img{
+    justify-self: flex-start;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.payment > div:last-child{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F6A5C0;
+}
+
+@media (max-width: 700px) {
+    .bank button{
+        width: 150px;
+    }
+}
