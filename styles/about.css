@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    max-width: 50%;
+    min-width: 350px;
+    background-color: aliceblue;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 3em;
+    padding: 20px;
+    column-gap: 20px;
+    
+}
+.objective-wrap{
+    display: inherit;
+    flex-direction: column;
+    row-gap: 12px;
+    text-align: justify;
+    max-width: 40%;
+    min-width: 300px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+}
+.objective{
+    background-color: beige;
+    border: 2px #CBA0D3 solid;
+    border-radius: 8px;
+    padding: 10px;
+}
