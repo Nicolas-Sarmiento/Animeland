@@ -9,10 +9,42 @@ main{
     row-gap: 5px;
     
 }
+.avatar{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar h2{
+    position: relative;
+    right: 500px;
+    font-size: 108px;
+    background: linear-gradient(to right, blue,#ea05f1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.avatar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/avatar/kiwi\ fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 150px;
+    opacity: 0.6;
+    z-index: -1;
+}
 .info{
-    max-width: 50%;
+    max-width: 60%;
     min-width: 350px;
-    background-color: aliceblue;
     border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
@@ -20,33 +52,57 @@ main{
     row-gap: 3em;
     padding: 20px;
     column-gap: 20px;
-    
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
-.objective-wrap{
-    display: inherit;
-    flex-direction: column;
-    row-gap: 12px;
-    text-align: justify;
-    max-width: 40%;
-    min-width: 300px;
+.AboutUs img{
+    border-radius: 50%;
+    height: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
-.about{
+.AboutUs{
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+.forum{
+    width: 70%;
+}
+@media (max-width: 600px){
+    .forum .AboutUs{
+        flex-wrap: wrap;
+    }
+}
+
 .objective{
     background-color: beige;
     border: 2px #CBA0D3 solid;
     border-radius: 8px;
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.interlude{
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/avatar/kiwi\ fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 150px;
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .contact-form{
     display: flex;
     align-items: center;
-    background-color: aliceblue;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     min-width: 350px;
     padding: 20px;
     border-radius: 4px;
