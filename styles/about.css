@@ -71,6 +71,12 @@ main{
 .forum{
     width: 70%;
 }
+@media (max-width: 600px){
+    .forum .AboutUs{
+        flex-wrap: wrap;
+    }
+}
+
 .objective{
     background-color: beige;
     border: 2px #CBA0D3 solid;
