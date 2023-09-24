@@ -174,11 +174,19 @@ main{
     min-height: 395px;
     max-height: 395px;
 }
+.container-video{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
 .contenedor-ofertas{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 .ofert{
