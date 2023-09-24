@@ -7,6 +7,7 @@ main{
     width: 100%;
     padding-top: 153px;
 }
+
 .cartElement{
     height: 800px;
     display: flex;
@@ -109,6 +110,28 @@ main{
 }
 .totalPrice{
     margin-left: 100px;
+}
+@media(max-width: 1000px) {
+    .cartContainer{
+        flex-wrap: wrap;
+    }
+    .cart{
+        border: none;
+        height: fit-content;
+    }
+    .payment{
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    h2{
+        font-size: auto;
+    }
+}
+@media(max-width: 800px) {
+    .user{
+        display: none;
+    }
 }
 
 .footer-content {

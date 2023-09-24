@@ -177,6 +177,11 @@ main{
     min-height: 395px;
     max-height: 395px;
 }
+@media(max-width: 600px){
+    .special img{
+        max-width: 500px;
+    } 
+}
 .container-video{
     width: 100%;
     height: fit-content;
@@ -281,4 +286,10 @@ main{
 
 header button{
     cursor: pointer;
+}
+
+@media (max-width:600px) {
+    video{
+        width: 500px;
+    }
 }
