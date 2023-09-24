@@ -73,6 +73,9 @@ body{
     display: flex;
     align-items: center;
 }
+.carrito a{
+    text-decoration: none;
+}
 .ventana-carritos{
     background-color: transparent;
     border: none;

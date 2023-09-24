@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrito</title>
     <link rel="icon" type="imagenest/png" href="../images/Logo definitivo.png">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/profile.css">
-    <title>Tu perfil</title>
+    <link rel="stylesheet" href="../styles/shopcart.css">
 </head>
 <body>
     <header class="site-header">
@@ -69,94 +69,91 @@
         </section>
     </header>
     <main>
-        <section class="container">
-            <div class="profile-icon">
-                <img src="../images/profileIcon.png" alt="imagen de perfil">
-            </div>
-            <div>
-                <p>User Name</p>
-                <h3>Monita China 44</h3>
-            </div>
-            <div class="info-container address">
-                <div>
-                    <p>Dirección</p>
-                    <h3>Carrera 15 #2-97. Sogamoso, Boyacá</h3>
+        <section class="cartContainer">
+            <div class="cartElement user">
+                <div class="profile-icon">
+                    <img src="../images/profileIcon.png" alt="imagen de perfil">
                 </div>
-                <div>
-                    <button>cambiar</button>
+                <div class="info-container">
+                    <p>User Name</p>
+                    <h3>Monita China 44</h3>
                 </div>
-            </div>
-            <div class="info-container bank">
-                <div>
-                    <p>Tus tarjetas</p>
-                    <h3>Visa: <span>xxxx-xxxx-xxxx-xxxx-4538</span></h3>
+                <div class="info-container">
+                    <div>
+                        <p>Datos de direccion</p>
+                        <h3>Carrera 15 #2-97. Sogamoso, Boyacá</h3>
+                    </div>
                 </div>
-                <div>
-                    <button>Quitar</button>
-                </div>
-                <div class="add-Card">
-                    <button> agregar</button>
+                <div class="info-container">
+                    <div>
+                        <p>Informacion Bancaria</p>
+                        <h3>Visa: <span>xxxx-xxxx-xxxx-xxxx-4538</span></h3>
+                    </div>
                 </div>
             </div>
-            <div class="password">
-                <button>Cambiar contraseña</button>
+            <div class="cartElement cart">
+                <h2>Carrito</h2>
+                <div class="product">
+                    <div>
+                        <div>
+                            <img src="../images/61OMTcqYkRL._AC_SL1278_.jpg" alt="producto 1">
+                        </div>
+                        <div>
+                            <p>Figura Acción tamaño 16cm</p>
+                        </div>
+                        <div>
+                            <p>1 unidad</p>
+                        </div>
+                        <div>
+                            <p>$206.309 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <div>
+                            <img src="../images/HP_Small-Category_WeeklySpecials_0919_730x730.jpg" alt="producto 1">
+                        </div>
+                        <div>
+                            <p>Figura Acción tamaño 16cm</p>
+                        </div>
+                        <div>
+                            <p>1 unidad</p>
+                        </div>
+                        <div>
+                            <p>$650.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div>
+                        <div>
+                            <img src="../images/products/Bocchi.jpg" alt="producto 1">
+                        </div>
+                        <div>
+                            <p>Figura Acción tamaño 16cm</p>
+                        </div>
+                        <div>
+                            <p>1 unidad</p>
+                        </div>
+                        <div>
+                            <p>$275.723 COP</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="container">
-            <h2>COMPRADOS RECIENTEMENTE</h2>
-            <div class="payment">
-                <div>
-                    <div>
-                        <img src="../images/61OMTcqYkRL._AC_SL1278_.jpg" alt="producto 1">
-                    </div>
-                    <div>
-                        <p>Figura Acción tamaño 16cm</p>
-                    </div>
-                    <div>
-                        <p>1 unidad</p>
-                    </div>
-                    <div>
-                        <p>$20.000 COP</p>
-                    </div>
-                </div>
-                <div>
-                    <p>Total</p>
-                    <p>$20.000 COP</p>
-                </div>
-            </div>
-            <div class="payment">
-                <div>
-                    <div>
-                        <img src="../images/HP_Small-Category_WeeklySpecials_0919_730x730.jpg" alt="producto 1">
-                    </div>
-                    <div>
-                        <p>Figura Acción tamaño 16cm</p>
-                    </div>
-                    <div>
-                        <p>1 unidad</p>
-                    </div>
-                    <div>
-                        <p>$20.000 COP</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <img src="../images/61OMTcqYkRL._AC_SL1278_.jpg" alt="producto 1">
-                    </div>
-                    <div>
-                        <p>Figura Acción tamaño 16cm</p>
-                    </div>
-                    <div>
-                        <p>1 unidad</p>
-                    </div>
-                    <div>
-                        <p>$20.000 COP</p>
-                    </div>
-                </div>
-                <div>
-                    <p>Total</p>
-                    <p>$40.000 COP</p>
-                </div>
+            <div class="cartElement payment">
+                <h2 class="paymentElement">Sub Total</h2>
+                <ul>
+                    <li>$206.309 COP</li>
+                    <li>$650.000 COP</li>
+                    <li>$275.723 COP</li>
+                </ul>
+                <h2 class="paymentElement">Total a pagar</h2>
+                <h2 class="paymentElement totalPrice">$1132032</h2>
+                <button class="paymentElement">
+                    Pagar
+                </button>
             </div>
         </section>
     </main>
@@ -188,6 +185,6 @@
                 </figcaption>
             </figure>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
